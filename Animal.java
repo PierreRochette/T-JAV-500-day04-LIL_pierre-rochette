@@ -55,7 +55,7 @@ public class Animal {
     }
 
     public static int getNumberOfAnimals() {
-        if (numberOfAnimals <= 1) {
+        if (numberOfAnimals == 1) {
             System.out.println("There is currently " + numberOfAnimals + " animal in our world.");
         } else {
             System.out.println("There are currently " + numberOfAnimals + " animals in our world.");
@@ -64,7 +64,7 @@ public class Animal {
     }
 
     public static int getNumberOfMammals() {
-        if (numberOfMammals <= 1) {
+        if (numberOfMammals == 1) {
             System.out.println("There is currently " + numberOfMammals + " mammal in our world.");
         } else {
             System.out.println("There are currently " + numberOfMammals + " mammals in our world.");
@@ -74,7 +74,7 @@ public class Animal {
     }
 
     public static int getNumberOfFish() {
-        if (numberOfFish <= 1) {
+        if (numberOfFish == 1) {
             System.out.println("There is currently " + numberOfFish + " fish in our world.");
         } else {
             System.out.println("There are currently " + numberOfFish + " fish in our world.");
@@ -84,7 +84,7 @@ public class Animal {
     }
 
     public static int getNumberOfBirds() {
-        if (numberOfBirds <= 1) {
+        if (numberOfBirds == 1) {
             System.out.println("There is currently " + numberOfBirds + " bird in our world.");
         } else {
             System.out.println("There are currently " + numberOfBirds + " birds in our world.");
