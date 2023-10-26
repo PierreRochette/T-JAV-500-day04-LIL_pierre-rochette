@@ -1,16 +1,16 @@
 public class Animal {
 
-    protected String name;
-    protected int legs;
-    protected Type type;
     protected enum Type {
         MAMMAL, FISH, BIRD
     };
-
+    protected String name;
+    protected int legs;
+    protected Type type;
     private static int numberOfAnimals = 0;
     private static int numberOfMammals = 0;
     private static int numberOfFish = 0;
     private static int numberOfBirds = 0;
+
     protected Animal (String name, int legs, Type type) {
         this.name = name;
         this.legs = legs;
@@ -20,10 +20,13 @@ public class Animal {
         switch(type) {
             case MAMMAL :
                 numberOfMammals++;
+                break;
             case BIRD:
                 numberOfBirds++;
+                break;
             case FISH:
                 numberOfFish++;
+                break;
         }
 
         numberOfAnimals++;
@@ -38,16 +41,12 @@ public class Animal {
     }
 
     public String getType() {
-        switch(type) {
-            case MAMMAL :
-                return "mammal";
-            case FISH :
-                return "fish";
-            case BIRD:
-                return "bird";
-            default:
-                return "unknown";
-        }
+        return switch (type) {
+            case MAMMAL -> "mammal";
+            case FISH -> "fish";
+            case BIRD -> "bird";
+            default -> "unknown";
+        };
     }
 
     public void setName(String name) {
@@ -58,7 +57,7 @@ public class Animal {
         if (numberOfAnimals <= 1) {
             System.out.println("There is currently " + numberOfAnimals + " animal in our world.");
         } else {
-            System.out.println("There are currently " + numberOfAnimals + " in our world.");
+            System.out.println("There are currently " + numberOfAnimals + " animals in our world.");
         }
         return numberOfAnimals;
     }
@@ -91,6 +90,5 @@ public class Animal {
         }
         return numberOfBirds;
     }
-
 
 }
