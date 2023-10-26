@@ -40,6 +40,7 @@ public class Animal {
         return legs;
     }
 
+
     public String getType() {
         return switch (type) {
             case MAMMAL -> "mammal";
@@ -53,7 +54,7 @@ public class Animal {
         this.name = name;
     }
 
-    public int getNumberOfAnimals() {
+    public static int getNumberOfAnimals() {
         if (numberOfAnimals <= 1) {
             System.out.println("There is currently " + numberOfAnimals + " animal in our world.");
         } else {
@@ -62,7 +63,7 @@ public class Animal {
         return numberOfAnimals;
     }
 
-    public int getNumberOfMammals() {
+    public static int getNumberOfMammals() {
         if (numberOfMammals <= 1) {
             System.out.println("There is currently " + numberOfMammals + " mammal in our world.");
         } else {
@@ -72,7 +73,7 @@ public class Animal {
         return numberOfMammals;
     }
 
-    public int getNumberOfFish() {
+    public static int getNumberOfFish() {
         if (numberOfFish <= 1) {
             System.out.println("There is currently " + numberOfFish + " fish in our world.");
         } else {
@@ -82,7 +83,7 @@ public class Animal {
         return numberOfFish;
     }
 
-    public int getNumberOfBirds() {
+    public static int getNumberOfBirds() {
         if (numberOfBirds <= 1) {
             System.out.println("There is currently " + numberOfBirds + " bird in our world.");
         } else {
