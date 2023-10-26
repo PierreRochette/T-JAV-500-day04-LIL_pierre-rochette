@@ -31,7 +31,7 @@ public class Shark extends Animal {
 
     public void eat(Animal animal) {
         if (canEat(animal)) {
-            System.out.println(name + " ate a " + animal.getType() + " named " + animal.name);
+            System.out.println(name + " ate a " + animal.getType() + " named " + animal.name + ".");
             frenzy = false;
         } else {
             System.out.println(name + ": It's not worth my time.");
